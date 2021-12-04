@@ -1,9 +1,9 @@
 # K-Means
 K-Means Practice for Clustring Data
 # K-means Practice 
-# Data x1=(1   1   4),x2=(2   2   1),x3=(7   5   6),x4=(6   5   5),x5=(1   0   2),x6=(9   8   7),x6=(4   5   7),x7=(2   1   2)
-# 3D => 3 Dimention Data
-# Amin Zayeromali  ==> amin.zayeromali@gmail.com  Likedin Profile : https://ir.linkedin.com/in/aminzayeromali
+Data x1=(1   1   4),x2=(2   2   1),x3=(7   5   6),x4=(6   5   5),x5=(1   0   2),x6=(9   8   7),x6=(4   5   7),x7=(2   1   2)
+3D => 3 Dimention Data
+Amin Zayeromali  ==> amin.zayeromali@gmail.com  Likedin Profile : https://ir.linkedin.com/in/aminzayeromali
 
 # Use Matplotlib For plotting data
 ![image](https://user-images.githubusercontent.com/7605327/144722300-29655c1e-1bf3-472a-b50e-1c85c2ba8994.png)
