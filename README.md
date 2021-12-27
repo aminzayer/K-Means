@@ -76,4 +76,4 @@ Email : [Amin {dot} zayeromali {At} gmail {dot} com](&#109;&#097;&#105;&#108;&#1
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the GNU General Public License - see the LICENSE.md file for details
