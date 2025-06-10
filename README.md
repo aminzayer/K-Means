@@ -10,6 +10,31 @@ K-Means Projects and Implementation
 
 K-Means Practice for Clustring Data
 
+**`K-Means-Algorithms.cpp`**
+This file contains a C++ implementation of the K-Means algorithm. It takes 10 integer numbers as input from the user, then prompts for two initial mean values. The program iteratively assigns each number to one of two clusters based on proximity to the current means (using absolute difference). After each iteration, it recalculates the cluster means by averaging the values within them and prints the clusters and their means. This process continues until the means stabilize. It utilizes older C++ libraries like `<iostream.h>` and `<conio.h>`.
+
+**`K-Means-Algorithms.py`**
+This Python script implements the K-Means++ initialization algorithm, a method for selecting better initial centroids for K-Means clustering.
+- It uses `numpy` to generate four distinct clusters of 2D data points using multivariate normal distributions.
+- A `plot` function using `matplotlib` visualizes the data points and the centroid selection process.
+- The `initialize` function implements K-Means++: it randomly selects the first centroid, then iteratively selects subsequent centroids from data points with probabilities proportional to their squared distance from the nearest existing centroid (specifically picking the point with the maximum such distance).
+- The script calls `initialize(data, k=4)` to select 4 initial centroids.
+
+**`K-means-Practice.py`**
+This Python script demonstrates a practical application of the K-Means clustering algorithm using the `scikit-learn` library.
+- It defines a small 3-dimensional dataset (8 points, 3 features) using a `pandas` DataFrame.
+- `matplotlib` is used to create an initial 3D scatter plot of the data.
+- It applies `KMeans` from `sklearn.cluster` (with `K=2`) to cluster the data.
+- Cluster labels are added to the DataFrame and printed.
+- A final 3D scatter plot, with points colored by their assigned cluster, visualizes the result.
+
+**`Practice_K_Mean.ipynb`**
+This Jupyter Notebook serves as an interactive, Persian-language tutorial or practice exercise for K-Means clustering.
+- It uses `pandas` to create an 8-point, 3-feature dataset (same as in `K-means-Practice.py`).
+- `matplotlib` is used for 3D scatter plots of the initial data and the final clustered data (points colored by cluster).
+- `KMeans` from `sklearn.cluster` (with `k=2`) is used to perform the clustering.
+- Markdown cells and code comments are primarily in Persian, guiding the user through the K-Means process.
+
 ### K-means Practice 
 Data x1=(1   1   4),x2=(2   2   1),x3=(7   5   6),x4=(6   5   5),x5=(1   0   2),x6=(9   8   7),x6=(4   5   7),x7=(2   1   2)
 3D => 3 Dimention Data
