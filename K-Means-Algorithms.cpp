@@ -1,5 +1,34 @@
+/**
+ * @file K-Means-Algorithms.cpp
+ * @brief Simple 1D K-Means clustering implementation in C++.
+ *
+ * This program demonstrates a basic K-Means clustering algorithm on a set of 10 integers.
+ * It asks the user to input 10 numbers and 2 initial means. It then iteratively
+ * groups the numbers into two clusters based on the nearest mean and recalculates
+ * the means until convergence.
+ *
+ * @note This code uses legacy headers (<iostream.h>, <conio.h>) and syntax,
+ *       targeting older compilers like Turbo C++. It may not compile on modern
+ *       standard-compliant C++ compilers without modification.
+ */
+
 #include <iostream.h>
 #include <conio.h>
+
+/**
+ * @brief Main execution function.
+ *
+ * Performs the following steps:
+ * 1. Takes 10 integer inputs from the user.
+ * 2. Takes 2 initial mean values from the user.
+ * 3. Iteratively:
+ *    - Assigns each number to the cluster defined by the closest mean.
+ *    - Recalculates the mean of each cluster.
+ *    - Prints the current clusters and their means.
+ *    - Repeats until the means stop changing.
+ *
+ * @return void (Standard C++ expects int, but void is used here as per legacy style)
+ */
 void main()
 {
     int i1, i2, i3, t1, t2;
@@ -69,14 +98,14 @@ void main()
         {
             t2 = t2 + k1[t1];
         }
-        m1 = t2 / i2;
+        if (i2 > 0) m1 = t2 / i2; // Avoid division by zero if cluster is empty
 
         t2 = 0;
         for (t1 = 0; t1 < i3; t1++)
         {
             t2 = t2 + k2[t1];
         }
-        m2 = t2 / i3;
+        if (i3 > 0) m2 = t2 / i3; // Avoid division by zero if cluster is empty
 
         //printing clusters
         cout << "\nCluster 1:";
